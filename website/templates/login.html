@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="bo1">
+  <div class="lognav">
+      <div class="logo1"></div>
+       <button id="b3" onclick="window.location.href='signup'"><span id="s3">GET STARTED</span></button>
+  </div> 
+
+  <div class="main">
+    {%with messages=get_flashed_messages(with_categories=true) %}
+  {%if messages%}
+  {% for category,message in messages %}
+  <div class="msg" id="msg">
+  {%if category=="error"%}
+  <div class="errormsg le">
+    <i class="material-icons" style="color: red;">error</i>
+    <span class="sp e">{{message}}</span>
+    
+  </div>
+  {%endif%}
+</div>
+  {%endfor%}
+  {%endif%}
+  {%endwith%}
+    {% block body%}
+    <div class="cont1">
+      <div class="logpg login">
+          <h2>LOGIN</h2>
+          <form method="post">
+              <div class="input-box">
+                  <span class="icon"></span>
+                  <input type="email" name="email" required>
+                  <label>Email</label>
+              </div>
+              <div class="input-box">
+                  <span class="icon"></span>
+                  <input type="password" name="pass1" required>
+                  <label>Password</label>
+              </div>
+              <button type="submit" id="lb"><span id="lsp">LOGIN</span></button>
+          </form>
+      </div>
+  </div>
+    {% endblock %}
+  </div>
+<script>
+  var toast=document.getElementById('msg');
+  setTimeout(()=>{
+    toast.remove();
+  },3000);
+</script>
+</body>
+
+</html>

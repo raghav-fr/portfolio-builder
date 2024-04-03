@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body class="bo1">
+    <div class="lognav">
+        <div class="logo1"></div>
+        <button id="b3" onclick="window.location.href='login'"><span id="s3">LOGIN</span></button>
+    </div>
+    {%with messages=get_flashed_messages(with_categories=true) %}
+  {%if messages%}
+  {% for category,message in messages %}
+  <div class="msg" id="msg">
+  {%if category=="error"%}
+  <div class="errormsg">
+    <i class="material-icons" style="color: red;">error</i>
+    <span class="sp e">{{message}}</span>
+    
+  </div>
+  {%endif%}
+</div>
+  {%endfor%}
+  {%endif%}
+  {%endwith%}
+    <div class="cont1 wid">
+        <div class="logpg login wid">
+            <h2>SIGN UP</h2>
+            <form method="post">
+                <div class="input-box si mr">
+                    <span class="icon"></span>
+                    <input type="text" name="name" id="name" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-box si">
+                    <span class="icon"></span>
+                    <input type="email" name="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box si mr">
+                    <span class="icon"></span>
+                    <input type="password" name="pass1" id="pass1" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-box si">
+                    <span class="icon"></span>
+                    <input type="password" name="pass2" id="pass2" required>
+                    <label> Confirm Password</label>
+                </div>
+                <button type="submit" id="lb" class="t" onclick=""><span id="lsp">SIGN UP</span></button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var toast=document.getElementById('msg');
+        setTimeout(()=>{
+          toast.remove();
+        },3000);
+      </script>
+</body>
+
+</html>

@@ -1,0 +1,659 @@
+@font-face {
+    font-family: PTG;
+    src: url(/static/font/ptg.otf);
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    display: grid;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border: 18px;
+    width: 95vw;
+    height: 53px;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-shrink: 0;
+    border-radius: 18px;
+    background: rgba(217, 217, 217, 0.05);
+    backdrop-filter: blur(2.25px);
+    z-index: 999;
+}
+
+.bg {
+    position: absolute;
+    margin-left: 367px;
+    width: 1045px;
+    height: 660px;
+    background: url(/static/images/Rectangle\ 10.png), lightgray 50% / cover no-repeat;
+    mix-blend-mode: hard-light;
+}
+
+.bg2 {
+    position: absolute;
+    margin-left: 300px;
+    width: 1059px;
+    height: 660px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #000 21.1%, rgba(0, 0, 0, 0.00) 99.67%);
+    mix-blend-mode: overlay;
+}
+
+.t1 {
+    position: absolute;
+    margin-top: 190px;
+    margin-left: 15px;
+    margin-right: 442px;
+    width: 978px;
+    height: 110.392px;
+    flex-shrink: 0;
+    text-align: center;
+    text-shadow: -8.624px 2.538px 6.725px rgba(145, 189, 255, 0.56);
+    font-family: PTG;
+    font-size: 60.906px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#p1 {
+    position: absolute;
+    margin-top: 285px;
+    margin-left: 35px;
+    margin-right: 442px;
+    color: #FFF;
+    text-align: center;
+    font-family: PTG;
+    font-size: 19.643px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#s1 {
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#b1 {
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 35px;
+    margin-right: 442px;
+    width: 216px;
+    height: 43px;
+    flex-shrink: 0;
+
+    text-align: center;
+    font-family: "Gotham Black";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.u {
+    margin-top: 11px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-family: "Gotham Black";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+li {
+    padding-left: 80px;
+
+}
+
+#s2 {
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#b2 {
+    color: #FFF;
+    text-align: center;
+    font-family: "Gotham Black";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#b3 {
+    width: 176px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #91BDFF;
+    box-shadow: 0px 8px 9.3px 0px rgba(255, 255, 255, 0.33);
+}
+
+#s3 {
+    width: 184px;
+    height: 28px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: "Gotham Black";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.cont1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 393.861px;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 36.2px;
+    border: 0.724px solid #FEE;
+    background: rgba(170, 156, 199, 0.27);
+    backdrop-filter: blur(3.330437183380127px);
+}
+
+.cont1 .logpg {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    padding: 40px;
+    padding-top: 0px;
+}
+
+.logpg h2 {
+    color: #FFF;
+    text-align: center;
+    width: 113.669px;
+    height: 55.025px;
+    flex-shrink: 0;
+    font-family: "PTG FUTURIZM - DEMO";
+    font-size: 23.168px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0px;
+
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 17.376px;
+    font-style: normal;
+    color: #fff;
+    font-weight: 400;
+    pointer-events: none;
+    width: 400px;
+    height: 32.58px;
+    flex-shrink: 0;
+    font-family: "PTG FUTURIZM - DEMO";
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.15em;
+    color: #fff;
+    font-weight: 500;
+    padding: 0 35px 0 5px;
+}
+
+.bo1 {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/static/images/logimg.png) lightgray 50% / cover no-repeat;
+    background-position: center;
+    flex-direction: column;
+}
+
+.lognav {
+    position: absolute;
+    margin-top: 18px;
+    right: 10px;
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    position: fixed;
+    border: 18px;
+    width: 1440px;
+    height: 53px;
+}
+
+
+#lb {
+    width: 323.632px;
+    height: 30.408px;
+    flex-shrink: 0;
+    border-radius: 7.24px;
+    background: #FFF;
+}
+
+#lsp {
+    text-align: center;
+    width: 110.773px;
+    height: 23.168px;
+    flex-shrink: 0;
+    text-align: center;
+    font-family: "Gotham Black";
+    font-size: 17.376px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.wid {
+    width: 800px;
+}
+
+.logpg form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.si {
+    width: 46%;
+    gap: 10px;
+}
+
+.si input {
+    width: 100%;
+}
+
+.fstcontent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0%;
+}
+
+.sndcontent {
+    position: relative;
+    width: 98vw;
+    height: 100vh;
+}
+
+.t {
+    position: absolute;
+    bottom: 30px;
+    right: 35px;
+}
+
+.mr {
+    margin-right: 57px;
+}
+
+.head {
+    margin-top: 80px;
+    margin-left: 40px;
+    margin-right: 1166px;
+    color: #FFF;
+    width: 500px;
+    font-family: "PTG FUTURIZM - DEMO";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section {
+    height: auto;
+    position: relative;
+    display: grid;
+    gap: 10px;
+    width: 601px;
+    color: #FFF;
+    text-align: right;
+    font-family: "PTG FUTURIZM - DEMO";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    top: 138px;
+    right: 273px;
+    left: 566px;
+    justify-items: end;
+}
+
+.sp1 {
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#sec2 {
+    top: 0px;
+}
+
+#s4 {
+    top: 44px;
+}
+
+.bt1 {
+    width: 176px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    border: 1px solid #91BDFF;
+    background: #FFF;
+    box-shadow: 0px 8px 9.3px 0px rgba(255, 255, 255, 0.33);
+}
+
+.sp2 {
+    text-align: center;
+    font-family: "Gotham Black";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#svg1 {
+    position: absolute;
+    right: 110px;
+    bottom: 120px;
+}
+
+#svg2 {
+    position: absolute;
+    right: 110px;
+    bottom: 200px;
+}
+
+.line1 {
+    width: 1px;
+    height: 291px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%);
+    position: absolute;
+    right: 139px;
+    bottom: 258px;
+}
+
+.line2 {
+    width: 1px;
+    height: 113px;
+    flex-shrink: 0;
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%), #D9D9D9;
+    position: absolute;
+    right: 139px;
+    bottom: 7px;
+}
+
+.trdcontent {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    color: #FEE;
+}
+
+.head2 {
+    position: sticky;
+    width: 100%;
+    top: 8%;
+    height: 113px;
+    background-color: #000;
+    z-index: 1;
+    padding-top: 21px;
+}
+
+.head2 h1 {
+    position: relative;
+    width: 400px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #FFF;
+    text-align: center;
+    font-family: PTG;
+    font-size: 31.818px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.f1 {
+    width: 100%;
+    height: 300vh;
+}
+
+.underl {
+    position: relative;
+    width: 98%;
+    height: 1vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 46px;
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%), #D9D9D9;
+}
+
+.l {
+    position: absolute;
+    width: 1px;
+    height: 300vh;
+    background: #D9D9D9;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.frthcontent {
+    position: relative;
+    width: 100%;
+    height: 150vh;
+    overflow: hidden;
+    /* background-color: #FA00FF; */
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    /* background-color: red; */
+}
+
+#c6 {
+    position: absolute;
+    width: 480px;
+    height: 461px;
+    flex-shrink: 0;
+    border-radius: 480px;
+    background: linear-gradient(90deg, #91BDFF 3.65%, #FA00FF 99.71%);
+    box-shadow: -15px 15px 39.8px 0px rgba(255, 0, 245, 0.25);
+    left: 10%;
+    bottom: 20%;
+}
+#c1 {
+    position: absolute;
+    left: 21%;
+    top: 14%;
+    z-index: 3;
+}
+#c2 {
+    position: absolute;
+    left: 4%;
+    bottom: 19%;
+    z-index: 2;
+}
+#c3 {
+    position: absolute;
+    top: 13%;
+    left: 6%;
+}
+#c4 {
+    position: absolute;
+    right: -5%;
+    top: 12%;
+    z-index: 4;
+}
+#c5 {
+    position: absolute;
+    right: -1%;
+    bottom: 29%;
+    z-index: 5;
+}
+.contactus {
+    right: 5%;
+    top: 13%;
+    position: absolute;
+    width: 798px;
+    height: 491px;
+    flex-shrink: 0;
+    border-radius: 31px;
+    background: linear-gradient(90deg, rgba(145, 189, 255, 0.20) 3.65%, rgba(250, 0, 255, 0.20) 99.71%);
+    backdrop-filter: blur(72px);
+}
+.fbg{
+    width: 100%;
+    height: 370px;
+    background: linear-gradient(90deg, rgba(145, 189, 255, 0.14) 3.65%, rgba(250, 0, 255, 0.14) 99.71%);
+}
+.successmsg{
+    position: relative;
+    width: 250px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    height: 40px;
+    background: white;
+    font-weight: 500;
+    box-shadow: 0 0 21px rgb(124, 253, 139);
+    margin-bottom: 20px;
+    transform: translateY(-100%);
+    animation: movedown 0.5s forwards;
+}
+.errormsg{
+    position: relative;
+    width: 220px;
+    height: 40px;
+    background: white;
+    font-weight: 500;
+    box-shadow: 0 0 21px rgb(253, 124, 124);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    transform: translateY(-100%);
+    animation: movedown 0.4s linear forwards;
+}
+@keyframes movedown {
+    100%{
+        transform: translateY(0%);
+    }
+}
+.sp {
+    margin-left: 3%;
+    position: relative;
+    display: flex;
+}
+.e{
+    color: red;
+}
+.s{
+    color: rgb(16, 187, 0);
+}
+.errormsg::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: red;
+    animation: anim 3s linear forwards;
+}
+.successmsg::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(16, 187, 0);
+    animation: anim 3s linear forwards;
+}
+@keyframes anim {
+    100%{
+        width:0;
+    }
+        
+    
+}
+.le{
+    left: 23%;
+}
